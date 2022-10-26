@@ -232,12 +232,8 @@
     .menu {
       display: block;
     }
-    .navbar-left ul {
-      display: none;
-    }
-    .navbar-email {
-      display: none;
-    }
+    .navbar-left ul, 
+    .navbar-email,
     .desktop-menu {
       display: none;
     }
