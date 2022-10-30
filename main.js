@@ -3,28 +3,28 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const navMenuLogo = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const cartIcon = document.querySelector('.navbar-shopping-cart');
-const cartMenu = document.querySelector('.product-detail')
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer')
 const cardsContainer = document.querySelector('.cards-container');
 
 navEmail.addEventListener('click', toggleDesktopMenu);
 navMenuLogo.addEventListener('click', toggleMobileMenu);
-cartIcon.addEventListener('click', toggleCartMenu);
+cartIcon.addEventListener('click', toggleshoppingCartContainer);
 
 function toggleDesktopMenu () {
-    const iscartMenuClose = cartMenu.classList.contains('inactive');
-    if(!iscartMenuClose) {
-        cartMenu.classList.add('inactive');
+    const isshoppingCartContainerClose = shoppingCartContainer.classList.contains('inactive');
+    if(!isshoppingCartContainerClose) {
+        shoppingCartContainer.classList.add('inactive');
     }
     desktopMenu.classList.toggle('inactive');
 }
 function toggleMobileMenu () {
-    const iscartMenuClose = cartMenu.classList.contains('inactive');
-    if(!iscartMenuClose) {
-        cartMenu.classList.add('inactive');
+    const isshoppingCartContainerClose = shoppingCartContainer.classList.contains('inactive');
+    if(!isshoppingCartContainerClose) {
+        shoppingCartContainer.classList.add('inactive');
     }
     mobileMenu.classList.toggle('inactive');
 }
-function toggleCartMenu () {
+function toggleshoppingCartContainer () {
     const ismobileMenuClose = mobileMenu.classList.contains('inactive');
     const isDesktopMenuClose = desktopMenu.classList.contains('inactive'); 
    if(!ismobileMenuClose) {
@@ -33,7 +33,7 @@ function toggleCartMenu () {
     else if(!isDesktopMenuClose) {
         desktopMenu.classList.add('inactive');
         }
-    cartMenu.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
 }
 
 const productList = [];
