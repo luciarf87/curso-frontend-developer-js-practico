@@ -346,7 +346,8 @@
     .desktop-menu {
       display: none;
     }
-    .aside {
+    .aside,
+    #poductDetail {
       width: 100%;
     }
     .cards-container {
